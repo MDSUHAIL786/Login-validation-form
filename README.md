@@ -1,1 +1,1 @@
-this is just login validation form using html,css and javaSript
+Login validation form with shaking effect when user enter wrong email(format) and empty password. 

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap');
+*{
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+}
+body{
+     min-height: 100vh;
+     font-family: 'Montserrat', sans-serif;
+     background-image: url("../img/pexels-hasan-albari-1229865.jpg");
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-size:cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     /* position: relative; */
+}
+.wrapper{
+  
+     width: 380px;
+     /* border: black solid 2px; */
+     background: rgba(104, 103, 103, 0.5);
+     border-radius: 5px;
+     padding: 40px 30px 50px 30px;
+     text-align: center;
+    
+     
+     
+     
+     
+}
+.wrapper header{
+     font-size: xx-large;
+     font-weight: bold;
+     color: white;
+}
+.wrapper form{
+     margin: 50px 0;
+}
+.field{
+     margin-bottom:25px;
+}
+form input[type="text"],input[type="password"]{
+     width: 330px;
+     height: 45px;
+     padding-left: 32px;
+     
+     outline: none;
+     font-size: 17px;
+     border-radius: 5px;
+     border: 1px solid gray;
+     
+     
+}
+form .field.error input{
+     border-color: #dc3534;
+}
+form .field.effect {
+     animation: effect 0.3s ease-in-out;
+}
+@keyframes effect{
+     0%,100%{
+          margin-left: 0px;
+     }
+     20%,80%{
+          margin-left: -12px;
+     }
+     40%,60%{
+          margin-left: 12px;
+     }
+}
+form input:hover{
+     border-width: 2px;
+     border-color: black;
+}
+.field .input-area{
+     position: relative;
+}
+.field .error-txt{
+     color: #dc3534;
+     
+     text-align: left;
+     
+}
+
+form .field i{
+     position: absolute;
+     
+     top: 50%;
+     
+     transform: translateY(-50%);
+     
+}
+.field .show{
+     position: absolute;
+     left: 10px;
+     color: #bfbfbf;
+}
+.field .show.blue{
+     color: blue;
+}
+form .invis{
+     position: absolute;
+     right: 8px;
+     color: #dc3534;
+     
+}
+form .forgot{
+     text-align: left;
+     margin-bottom: 40px;
+}
+
+a{
+     text-decoration: none;
+     color: aquamarine;
+}
+a:hover{
+     text-decoration: underline;
+}
+form .field .error{
+     display: none;
+}
+form .field.error .error{
+     display: block;
+}
+.btn{
+     width: 330px;
+     height: 45px;
+     text-align: center;
+     border-color:white ;
+     font-size: 17px;
+     cursor: pointer;
+     border-radius: 5px;
+     transition: all 0.2s ease-in-out;
+}
+.wrapper input[type="submit"]:hover{
+     background-color: aquamarine;
+     
+     border-color:rgb(209, 252, 237) ;
+     
+}
+.last{
+     color: white;
+}

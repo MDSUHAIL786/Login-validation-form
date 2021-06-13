@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+     <link rel="stylesheet" href="./css/login_form.css">
+</head>
+<body>
+     <div class="wrapper">
+          <header>Login form</header>
+          <form action="" method="POST" >
+               <div class="field e">
+                    <div class="input-area">
+                         <input type="text" placeholder="Enter your Email">
+                         <i class="fas fa-envelope show"></i>
+                         <i class="fas fa-exclamation-circle invis error"></i>
+                    
+                    </div>
+                    <div class="error error-txt">Invalid Email</div>
+               </div>
+               <div class="field p">
+                    <div class="input-area">
+                         <input type="password" placeholder="password">
+                         <i class="fas fa-lock show"></i>
+                         <i class="fas fa-exclamation-circle invis error"></i>
+                    
+                    </div>
+                    <div class="error error-txt">Password can't empty</div>
+               </div>
+               <div class="forgot"><a href="#">Forgot Password?</a></div>
+               <input type="submit" value="Log-In" class="btn">
+          </form>
+          <div class="last">Not yet member? <a href="#">Sign-up Now</a></div>
+     </div>
+     <script src="./javaScript/login.js"></script>
+</body>
+</html>
